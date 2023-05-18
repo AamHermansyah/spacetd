@@ -44,7 +44,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url(/public/images/rocket\ launching\ dark.jpg);
+  background: url(./public/images/rocket\ launching\ dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
