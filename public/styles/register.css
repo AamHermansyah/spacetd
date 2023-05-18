@@ -6,6 +6,7 @@
   width: 100%;
   padding-top: 100px;
   overflow-x: hidden;
+  padding-bottom: 20px;
 }
 
 .register .content-img {
@@ -28,7 +29,7 @@
 }
 
 .register .content-img img:first-child {
-  left: 20%;
+  left: 18%;
 }
 
 .register .content-img img:nth-child(2) {
@@ -196,7 +197,6 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     padding-inline: 20px;
-    padding-bottom: 20px;
   }
 
   .register .content-img {

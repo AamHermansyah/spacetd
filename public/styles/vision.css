@@ -1,0 +1,57 @@
+/* Start - Vision */
+#vision {
+  position: relative;
+  padding-left: var(--section-padding-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#vision .vision-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+#vision .vision-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(0,0,0,0) 89%);
+}
+
+#vision .vision-bg div {
+  max-width: 900px;
+}
+
+#vision .vision-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#vision .content {
+  max-width: 665px;
+  z-index: 1;
+}
+
+#vision .content h2 span {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #vision {
+    margin-top: 40px;
+    min-height: 350px;
+    padding: 20px;
+  }
+
+  #vision .vision-bg img {
+    object-position: 100px;
+  }
+}
+/* End - Vision */

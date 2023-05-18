@@ -1,0 +1,40 @@
+/* Start - Hero */
+#home button {
+  margin-bottom: 10px;
+}
+
+#home .video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .7;
+}
+
+#home .video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#home .home-container {
+  width: 100%;
+  /* Menghitung height 100% layar hp dikurangi 16px padding dari section dikali 2 */
+  height: calc(100vh - (var(--section-padding-y) * 2));
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.home-container h1 {
+  font-size: 44px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 25px;
+  }
+}
+/* End - Hero */

@@ -1,0 +1,58 @@
+/* Start - Count total */
+#count-total::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../images/rocket\ launching\ dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .7;
+  z-index: -1;
+}
+
+#count-total .count-total-container {
+  height: calc(100vh - (var(--section-padding-y) * 2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#count-total .total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#count-total .total h4 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#count-total .total h6 {
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #count-total .count-total-container {
+    height: calc(100vh - (var(--section-padding-y) * 2));
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #count-total .total h4 {
+    font-size: 40px;
+  }
+
+  #count-total .total h6 {
+    font-size: 20px;
+  }
+}
+/* End - Count total */
