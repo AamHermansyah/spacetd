@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&display=swap');
+@import url('./home.css');
+@import url('./card.css');
+@import url('./register.css');
+@import url('./parallax.css');
+@import url('./header.css');
+@import url('./footer.css');
+
+/* Start Root - Untuk menyimpan variabel css */
+:root {
+  --section-padding-y: 70px;
+  --text-primary-color: #F9FAF7;
+  --section-padding-x: 140px;
+}
+
+@media (max-width: 876px) {
+  :root {
+    --section-padding-x: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-x: 40px;
+  }
+}
+/* End Root */
+
+/* Start - Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  background-color: #000;
+  color: var(--text-primary-color);
+}
+
+h2, h4 {
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+/* End - Reset CSS */
+
+/* Start - Button */
+button {
+  width: max-content;
+  color: var(--text-primary-color);
+  padding: 16px 52px;
+  border-radius: 4px;
+  margin-top: 16px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: solid 2px var(--text-primary-color);
+  cursor: pointer;
+  transition: 200ms all ease-in;
+}
+
+button:active {
+  scale: .95;
+}
+
+button:hover {
+  background: white;
+  color: black;
+  border-color: var(--text-primary-color);
+}
+/* End - Button */
+
+/* Start - Section */
+section {
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+section.section {
+  position: relative;
+  padding: var(--section-padding-y) var(--section-padding-x);
+  z-index: 1;
+}
+/* End - Section */

@@ -1,0 +1,142 @@
+/* Digunakan juga untuk halaman programs dan launches */
+/* Start - Card Vehicles */
+
+.launches-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5em;
+}
+
+/* Jika card tidak memiliki class .card-label maka jalankan class ini */
+.card:not(:has(.cols-1)) {
+  margin-top: 60px;
+}
+
+.card:has(.cols-1) {
+  margin-bottom: 60px;
+}
+
+.card h2 {
+  font-size: 44px;
+  letter-spacing: 0.5em;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.card-img {
+  overflow: hidden;
+  border-radius: 37px;
+}
+
+.card-img img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-content {
+  margin-top: 46px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+/* Jika card content mempunyai class cols-1 makan timpa oleh class ini */
+.card-content.cols-1 {
+  margin-top: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+}
+
+.card-content p {
+  font-size: 20px;
+}
+
+.card-content button {
+  margin-top: 28px;
+}
+
+.card-specifications ul {
+  list-style: none;
+}
+
+.card-specifications ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--text-primary-color);
+}
+
+.card-specifications ul li h6 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.card-content.cols-1 h6 {
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0.155em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card-content.cols-1 h4 {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 876px) {
+  .card-content {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .launches-title {
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  /* Jika card tidak memiliki class .card-label maka jalankan class ini */
+  .card:not(:has(.cols-1)) {
+    margin-top: 30px;
+  }
+
+  .card:has(.cols-1) .card-content button {
+    margin-top: 15px;
+  }
+
+  .card-content.cols-1 {
+    margin-top: 20px;
+  }
+
+  .card-content.cols-1 h6 {
+    font-size: 16px;
+  }
+  
+  .card-content.cols-1 h4 {
+    font-size: 20px;
+  }
+
+  .card-content {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+  }
+
+  .card-img {
+    border-radius: 15px;
+  }
+
+  .card-specifications ul li {
+    font-size: 20px;
+  }
+  
+  .card-specifications ul li h6 {
+    font-size: 20px;
+  }
+}
+
+/* End - Card Vehicles */

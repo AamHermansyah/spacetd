@@ -1,0 +1,35 @@
+/* Start - Footer */
+footer {
+  padding: 63px 0;
+}
+
+footer nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  list-style: none;
+}
+
+footer nav ul a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+
+  footer nav ul {
+    flex-wrap: wrap;
+  }
+
+  footer nav ul {
+    gap: 15px;
+  }
+}
+/* End - Footer */

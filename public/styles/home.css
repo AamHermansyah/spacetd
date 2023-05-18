@@ -1,0 +1,250 @@
+/* Start - Home */
+#home button {
+  margin-bottom: 10px;
+}
+
+#home .video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: .7;
+}
+
+#home .video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#home .home-container {
+  width: 100%;
+  /* Menghitung height 100% layar hp dikurangi 16px padding dari section dikali 2 */
+  height: calc(100vh - (var(--section-padding-y) * 2));
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.home-container h1 {
+  font-size: 44px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 25px;
+  }
+}
+/* End - Home */
+
+/* Start - Count total */
+#count-total::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(/public/images/rocket\ launching\ dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .7;
+  z-index: -1;
+}
+
+#count-total .count-total-container {
+  height: calc(100vh - (var(--section-padding-y) * 2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#count-total .total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+#count-total .total h4 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+#count-total .total h6 {
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  #count-total .count-total-container {
+    height: calc(100vh - (var(--section-padding-y) * 2));
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  #count-total .total h4 {
+    font-size: 40px;
+  }
+
+  #count-total .total h6 {
+    font-size: 20px;
+  }
+}
+/* End - Count total */
+
+/* Start - Timeline */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-top: 40px;
+}
+
+.timeline .content-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline .content-img img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: 55%;
+}
+
+.timeline .content h4,
+#vision .content h4 {
+  margin-bottom: 5px;
+  font-weight: 300;
+  letter-spacing: 0.595em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.timeline .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline .content.content-right {
+  padding-right: var(--section-padding-x);
+  padding-left: 29px;
+}
+.timeline .content.content-left {
+  padding-left: var(--section-padding-x);
+  padding-right: 29px;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: auto;
+    margin-top: 60px;
+  }
+
+  .timeline.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .timeline .content-img {
+    padding: 0 20px;
+  }
+
+  .timeline .content-img img {
+    aspect-ratio: 16 / 9;
+    object-position: center;
+    border-radius: 10px;
+  }
+
+  .timeline .content {
+    justify-content: start;
+  }
+
+  .timeline .content h4,
+  #vision .content h4 {
+    font-size: 12px;
+  }
+
+  .timeline .content h2,
+  #vision .content h2 {
+    font-size: 20px;
+  }
+
+  .timeline .content.content-right {
+    padding: 0 20px;
+  }
+
+  .timeline .content.content-left {
+    padding: 0 20px;
+  }
+}
+/* End - Timeline */
+
+/* Start - Vision */
+#vision {
+  position: relative;
+  padding-left: var(--section-padding-x);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#vision .vision-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+#vision .vision-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 47%, rgba(0,0,0,0) 89%);
+}
+
+#vision .vision-bg div {
+  max-width: 900px;
+}
+
+#vision .vision-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#vision .content {
+  max-width: 665px;
+  z-index: 1;
+}
+
+#vision .content h2 span {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  #vision {
+    margin-top: 40px;
+    min-height: 350px;
+    padding: 20px;
+  }
+
+  #vision .vision-bg img {
+    object-position: 100px;
+  }
+}
+/* End - Vision */

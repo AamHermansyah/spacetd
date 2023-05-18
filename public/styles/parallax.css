@@ -1,0 +1,22 @@
+/* Start - Parallax Effect */
+h1, h2, h3, h4, h5, h6, button, .parallax-text-init {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+}
+
+.parallax-text {
+  animation: fade-in .5s .5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* End - Parallax Effect */
