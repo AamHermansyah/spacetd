@@ -80,9 +80,9 @@ button:hover {
 
 /* Start - Section */
 section {
-  max-width: 1500px;
+  max-width: 3000px;
   margin: 0 auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 section.section {

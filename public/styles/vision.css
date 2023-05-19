@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 100vh;
+  margin-top: 80px;
 }
 
 #vision .vision-bg {
@@ -25,7 +27,7 @@
 }
 
 #vision .vision-bg div {
-  max-width: 900px;
+  height: 100%;
 }
 
 #vision .vision-bg img {
@@ -51,7 +53,7 @@
   }
 
   #vision .vision-bg img {
-    object-position: 100px;
+    object-position: left;
   }
 }
 /* End - Vision */
